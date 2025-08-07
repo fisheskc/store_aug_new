@@ -19,16 +19,16 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang='en' suppressHydrationWarning>
-          <body className={inter.className}>
-            <Providers>
-                <Navbar />
-                <Container className="py-20">
-                  {children}
-                </Container>
-            </Providers>
-        </body>
-      </html>
+    <html lang='en' suppressHydrationWarning>
+        <body className={inter.className}>
+          <Providers>
+              <Navbar />
+              <Container className="py-20">
+                {children}
+              </Container>
+          </Providers>
+      </body>
+    </html>
     </ClerkProvider>
   );
 }
